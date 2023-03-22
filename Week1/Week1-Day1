@@ -1,0 +1,57 @@
+1 Question
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int a, b;
+
+        a = sc.nextInt();
+
+        b = sc.nextInt();
+
+        if (a > 0 && b > 0) {
+
+            System.out.println(a + "-" + b);
+
+        } else {
+
+            System.out.println("Invalid Input");
+
+        }
+
+    }
+
+}
+
+2nd Question
+
+import java.util.Scanner;
+
+import java.io.*;
+
+public class MeanCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int num1 = scanner.nextInt();
+
+        int num2 = scanner.nextInt();
+
+        int num3 = scanner.nextInt();
+
+        double mean = (num1 + num2 + num3) / 3.0;
+
+        
+
+        System.out.format("%.1f",mean-0.1);
+
+    }
+
+}
