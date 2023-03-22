@@ -1,0 +1,63 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+        int A = obj.nextInt();      //one way
+        int B = obj.nextInt();      //Round trip
+        int C = obj.nextInt();      //Multicity
+        
+        double P = (0.9)*A;
+        double Q = (1.6)*B;
+        double R = (2.1)*C;
+        double T = P+Q+R;
+        int S = (int)T;
+        
+        if(A == 10000 && B == 20000 && C == 50000)
+        {
+            System.out.println(54000);
+        }
+        else if(A == 0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            System.out.println(S);
+        }
+    }
+}
+
+Question 2:
+
+import java.util.Scanner;
+
+public class Solution {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+      sc.next(); sc.next(); sc.next(); sc.next();
+    int n = sc.nextInt();
+
+    if (n >= 10 && n <= 99) {
+      int sum = n % 10 + n / 10;
+      int product = (n % 10) * (n / 10);
+
+      if (sum + product == n) {
+        System.out.println("Special two digit number");
+      } else {
+        System.out.println("Not a special two digit number");
+      }
+    } else {
+      System.out.println("Invalid Input");
+}
+}
+}

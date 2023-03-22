@@ -1,0 +1,52 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        float A = obj.nextFloat();
+        int B = obj.nextInt();
+        int C = obj.nextInt();
+        
+        int D = (int)A;
+        
+        System.out.print(D+1+" "+B+" "+C);
+        
+        
+
+    }
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        float A = obj.nextFloat();
+        
+        int B  = (int)A;
+        
+        if(A<0)
+        {
+            System.out.println("Invalid Input");
+        }
+        else
+        {
+            System.out.println(B);
+        }
+
+    }
+}
