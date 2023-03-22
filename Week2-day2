@@ -1,0 +1,48 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int i = input.nextInt();
+        if(i>0)
+            {
+            System.out.println(i+".0");
+            }
+        else{
+            System.out.println("Invalid Input");
+            }
+   }
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        double n;
+
+        Scanner input = new Scanner(System.in);
+        n = input.nextDouble();
+        if(n>5)
+            System.out.println("Error: 101");
+        else if(n==0)
+        System.out.println("Error: 101");
+        else
+   System.out.println("Thanks");
+        }
+}
