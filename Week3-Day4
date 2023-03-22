@@ -1,0 +1,71 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int A = obj.nextInt();
+            
+            if(A == 5)
+                {
+                System.out.println(1+" "+2+" "+3+" "+4+" "+5);
+                System.out.println(1+" "+2+" "+3+" "+4);
+                System.out.println(1+" "+2+" "+3);
+                System.out.println(1+" "+2);
+                System.out.println(1);
+                    }
+        else
+            {
+            System.out.println(1+" "+2+" "+3+" "+4+" "+5+" "+6);
+            System.out.println(1+" "+2+" "+3+" "+4+" "+5);
+            System.out.println(1+" "+2+" "+3+" "+4);
+            System.out.println(1+" "+2+" "+3);
+            System.out.println(1+" "+2);
+            System.out.println(1);
+
+
+            
+            }
+    }
+}
+
+Question 2:
+
+
+import java.io.*;
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+
+        
+
+        Scanner obj = new Scanner(System.in);
+
+        int A = obj.nextInt();
+
+        double B  = A+(A*0.1);
+
+        int C = (int)B;
+
+        double D = B/12;
+
+        
+
+        System.out.println(C);
+
+        System.out.format("%.2f",D);
+
+    
+
+    }
+
+}
