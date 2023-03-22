@@ -1,1 +1,1 @@
-# CSE306DailyHackerRankQuestions
+# CSE310DailyHackerRankQuestions
