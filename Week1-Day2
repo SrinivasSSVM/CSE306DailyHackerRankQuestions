@@ -1,0 +1,67 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int N;
+        Scanner input = new Scanner(System.in);
+        N = input.nextInt();
+        
+        Boolean obj = false;
+        for (int i=2; i<=N; ++i)
+        {
+            if (N%2 == 0)
+            {
+                obj = true;
+                break;
+            }
+        }
+        
+        if(!obj)
+            System.out.println("Prime Number");
+        else
+            System.out.println("Not Prime Number");
+
+        
+    }
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+import java.util.Scanner;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        int X,Y,N;
+        Scanner input = new Scanner(System.in);
+        X = input.nextInt();
+        Y = input.nextInt();
+        N = input.nextInt();
+        
+        boolean found = false;
+        for (int i = X; i <= Y; i++) {
+            if (i % N == 0) {
+                System.out.print(i + " ");
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("NO OUTPUT");
+        }
+        
+        
+    }
+}
