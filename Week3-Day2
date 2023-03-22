@@ -1,0 +1,57 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+        String str1 = obj.next();
+        String str2 = obj.next();
+        
+        if(str1.length() != str2.length())
+        {
+            System.out.println("Not Similar");
+        }
+        else
+        {
+             System.out.println("Similar");           
+        }
+
+    }
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner obj = new Scanner(System.in);
+    int n = obj.nextInt();
+
+    if (n < 1) {
+      System.out.println("Invalid Input");
+      return;
+    }
+
+    for (int i = 1; i <= n; i++) {
+      for (int j = 1; j <= i; j++) {
+        System.out.print("&");
+      }
+      System.out.println();
+    }
+        
+    }
+}
