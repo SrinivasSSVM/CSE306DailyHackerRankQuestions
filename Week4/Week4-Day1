@@ -1,0 +1,130 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+enum Subject {
+
+    Java("Shruti", 4), OS("Puneet Kumar", 3), AI("James William", 2), Android("Md. Adil Khan", 3);
+
+    private final String facultyName;
+
+    private final int credits;
+
+    Subject(String facultyName, int credits) {
+
+        this.facultyName = facultyName;
+
+        this.credits = credits;
+
+    }
+
+    public String getFacultyName() {
+
+        return facultyName;
+
+    }
+
+    public int getCredits() {
+
+        return credits;
+
+    }
+
+}
+
+public class solution {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        String subject = sc.nextLine();
+
+        switch (subject) {
+
+            case "Java":
+
+                System.out.println(Subject.Java.getFacultyName() + " " + Subject.Java.getCredits());
+
+                break;
+
+            case "OS":
+
+                System.out.println(Subject.OS.getFacultyName() + " " + Subject.OS.getCredits());
+
+                break;
+
+            case "AI":
+
+                System.out.println(Subject.AI.getFacultyName() + " " + Subject.AI.getCredits());
+
+                break;
+
+            case "Android":
+
+                System.out.println(Subject.Android.getFacultyName() + " " + Subject.Android.getCredits());
+
+                break;
+
+            default:
+
+                System.out.println("This subject is not running in this semester.");
+
+        }
+
+    }
+
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        int A = obj.nextInt();
+        if (A <= 0) {
+        System.out.println("Invalid");
+        return;
+            }
+        int totalMarks = 0;
+         for (int i = 1; i <= A; i++)
+             {
+             int marks = obj.nextInt();
+             if (marks >= 0 && marks <= 100)
+                 {
+                 totalMarks += marks;
+
+            }
+
+        }
+
+        System.out.println(totalMarks);
+        }
+    }
+
+        
+
+
+
+
+
+
+        
+
+        
+            
+
+            
+
+                
