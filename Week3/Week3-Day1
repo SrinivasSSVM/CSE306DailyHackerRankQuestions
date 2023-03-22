@@ -1,0 +1,52 @@
+Question 1:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String str = input.nextLine();
+        char c = input.next().charAt(0);
+        int count = 0;
+    
+    for (int i = 0; i < str.length(); i++)
+    {
+      if (str.charAt(i) == c)
+      {
+        count++;
+      }
+    }
+    
+    System.out.println(count);
+
+    }
+}
+
+Question 2:
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner input = new Scanner(System.in);
+        int A = input.nextInt();
+        double B  = A+(A/10);
+        int C = (int)B;
+        double D = B/12;
+        
+        System.out.println(C);
+        System.out.format("%.2f",D);
+
+    }
+}
