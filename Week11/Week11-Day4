@@ -1,0 +1,91 @@
+Question 1:
+
+Raju, Rohit and Ramesh were playing a game where Raju instructs Rohit to open and close two pairs of parenthesis bracket and place your name inside the bracket tags then Rohit instructs Ramesh to open and close three pairs of curly brackets and place your name inside the bracket tag then at last Ramesh instructs Raju to open and close four pairs of square brackets and place your name inside the bracket tag.
+
+Input Format
+
+(()) Rohit
+
+Constraints
+
+First user input should be bracketing tags and the next user input should be string names In the output name should be in the middle of the bracket tags.
+
+Output Format
+
+((Rohit))
+
+Sample Input 0
+
+(())
+Rohit
+Sample Output 0
+
+((Rohit))
+
+import java.util.Scanner;
+public class BracketGame {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String bracketTags = scanner.nextLine();
+        String name = scanner.nextLine();
+        String result = bracketTags.substring(0, 2) + name + bracketTags.substring(2);
+        System.out.println(result);
+        scanner.close();
+}}
+
+Question 2:
+
+WAP to accpet one array of stings and integers.and count the number of stings and integers present in the array. Example Input: First line Accept size of array second line accept all elements like Array = {"Raj", "77", "101", "99", "Jio"}
+
+Output: 3 2
+
+Input Format
+
+First line accept sixe of the array(n) second line accepts the n elements/values .
+
+Constraints
+
+the array is one string type array and n>0
+
+Output Format
+
+First line print the number of Integers present Second line prints the number of Strings present
+
+Sample Input 0
+
+5
+Raj 77 101 99 Jio
+Sample Output 0
+
+3
+2
+
+import java.util.Scanner;
+public class StringIntegerCount {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        String[] array = new String[n];
+        for (int i = 0; i < n; i++) {
+            array[i] = scanner.next();
+        }
+        int integerCount = 0;
+        int stringCount = 0;
+        for (String element : array) {
+            if (isInteger(element)) {
+                integerCount++;
+            } else {
+                stringCount++;
+            }}
+        System.out.println(integerCount);
+        System.out.println(stringCount);
+        scanner.close();
+    }
+    private static boolean isInteger(String s) {
+        try {
+            Integer.parseInt(s);
+            return true;
+        } catch (NumberFormatException e) {
+            return false;
+}}}
+
