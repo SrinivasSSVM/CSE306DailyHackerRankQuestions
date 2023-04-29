@@ -1,0 +1,116 @@
+Question:
+
+It's PTM tomorrow in Cambridge School.Teachers want to show the grades from(A to E) depending on the percentage of the student. Help the teacher's by developing the program for the same.To find the grade of a student, given the marks of N subjects. Given the marks of N subjects, we have to print the grade of a student based on the following grade slab.
+
+If Percentage Marks > 90, Grade is A+ If 70 <= Percentage Marks <= 89, Grade is A If 60 <= Percentage Marks <= 69, Grade is B If 50 <= Percentage Marks <= 59, Grade is C If Percentage Marks <= 40, Grade is D
+
+Input Format
+
+Integer Value to enter number of subjects, count Enter marks of subjects depending upon the the total number of subjects
+
+Constraints
+
+Number of subjects should not exceed 7
+
+Output Format
+
+Character output to show grades
+
+Sample Input 0
+
+5
+50 57 89 87 56
+Sample Output 0
+
+B
+
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+int n = scanner.nextInt(); // number of subjects
+int totalMarks = 0;
+for (int i = 0; i < n; i++) {
+int marks = scanner.nextInt();
+totalMarks += marks;
+}
+double percentage = ((double) totalMarks / (double) (n * 100)) * 100;
+char grade;
+if (percentage > 90) {
+grade = 'A';
+} else if (percentage >= 70 && percentage <= 89) {
+grade = 'A';
+} else if (percentage >= 60 && percentage <= 69) {
+grade = 'B';
+} else if (percentage >= 50 && percentage <= 59) {
+grade = 'C';
+} else {
+grade = 'D';
+}
+System.out.println(grade);
+}
+}
+
+Question 2:
+
+Sushant and Virat are playing a game. Virat tells 2 numbers to Sushant, who need to check whether the first is bigger than second. Implement a method boolean isBigger(int a, int b) which returns true if a is bigger than b and false otherwise.
+
+Input Format
+
+Two space separated integer value representing numbers given by Virat
+
+Constraints
+
+Numbers will lie between 10 and 1000.
+
+Output Format
+
+true/false according to the value returned by the method or will print Invalid Input in case of numbers did not match the constraints.
+
+Sample Input 0
+
+50 40
+Sample Output 0
+
+true
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        int a = scanner.nextInt();
+
+        int b = scanner.nextInt();
+
+        if (isValidInput(a, b)) {
+
+            boolean result = isBigger(a, b);
+
+            System.out.println(result);
+
+        } else {
+
+            System.out.println("Invalid Input");
+
+        }
+
+        scanner.close();
+
+    }
+
+    public static boolean isBigger(int a, int b) {
+
+        return a > b;
+
+    }
+
+    public static boolean isValidInput(int a, int b) {
+
+        return a >= 10 && a <= 1000 && b >= 10 && b <= 1000;
+
+    }}
